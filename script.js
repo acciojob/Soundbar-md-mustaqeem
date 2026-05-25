@@ -1,18 +1,20 @@
 //your JS code here. If required.
-//your JS code here. If required.
 
 const sounds = [
   "applause",
-  "boom",
+  "boo",
   "gasp",
   "tada",
-  "victory"
+  "victory",
+  "wrong"
 ];
 
 const buttons = document.querySelectorAll(".btn");
 
 function stopSongs() {
+
   sounds.forEach(sound => {
+
     const song = document.getElementById(sound);
 
     song.pause();
@@ -38,7 +40,9 @@ buttons.forEach(button => {
     const text = button.innerText.toLowerCase();
 
     if (text === "stop") {
+
       stopSongs();
+
     } else {
 
       stopSongs();
